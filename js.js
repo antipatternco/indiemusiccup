@@ -436,7 +436,7 @@
     });
     
     
-    var a;
+    var a = document.getElementsByTagName("audio")[1];
 
     (function($) {
         $.fn.rainbow = function(options) {
@@ -496,7 +496,7 @@
 
 
     $(function() {
-        $('#goal div').rainbow({ 
+        $('#goal div div').rainbow({ 
                 colors: [
                     '#FF0000',
                     '#f26522',
@@ -529,15 +529,23 @@
             });
         }
 
-        // $.ajax({
-        //     url: "http://api.jo.je/virginmoneygiving/jsonp.php?d=574206&callback=?",
-        //     dataType: 'json',
-        //     success: function(data) {
-        //         var totalTotal = data.money_gift_aid + parseFloat(data.money_total);
-        //         $('.loader').remove();
-        //         $('#totalRaised').html('£' + totalTotal + ' <br />raised');
-        //     }
-        // });
+        $.ajax({
+            url: "http://api.jo.je/virginmoneygiving/jsonp.php?d=574206&callback=?",
+            dataType: 'json',
+            success: function(data) {
+                var totalTotal = data.money_gift_aid + parseFloat(data.money_total);
+                $('.loader').remove();
+                $('#sofar span').text(totalTotal);
+
+                /*
+
+
+                TODO: animate centre line here
+
+                */
+            }
+        });
+
         $('#about').on('click', function(){
             $('#info').toggle();
         })
@@ -546,19 +554,3 @@
             $('#info').toggle();
         })
     });
-      
-      function loopSound(sound) {
-        sound.play({
-            onfinish: function() {
-               loopSound(sound);
-            }
-        });
-      }
-      var md = new MobileDetect(window.navigator.userAgent);
-      if(!md.mobile()) {
-      // SC.get("/tracks/68280948", function(track){
-      //     SC.stream(track.uri, function(stream){
-      //       loopSound(stream);
-      //     });
-      // });
-      }

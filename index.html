@@ -2,22 +2,17 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
-    <script src="physicsjs-full.js"></script>
-    <script src="pixi.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.0.0/mobile-detect.min.js"></script>
   </head>
   
   <body>
     <div id="about">
-    About the tournament
+        About the tournament
     </div>
     <div id="donate">
         <a href="http://api.jo.je/virginmoneygiving/">Donate now</a>
     </div>
     <div id="sofar">
-    £<span>000</span> raised so far for MSF
+        £<span></span> raised so far for MSF
     </div>
     <div id="pitch">
     </div>
@@ -30,8 +25,10 @@
     <div id="by">
         site by <a href="http://antipattern.co">antipattern</a>
     </div>
-    <div id="line"></div>
-    <div id="centerspot"></div>
+    <div id="line">
+    </div>
+    <div id="centerspot">
+    </div>
     <div id="info">
         <p>16 companies working in the independent music industry come together in a 5-a-side football tournament on 4 June 2016. Support the teams by donating to MSF, the independent humanitarian medical aid organisation performing vital work.</p>
         <p><a href="http://api.jo.je/virginmoneygiving/">Donate now</a></p>
@@ -40,15 +37,28 @@
         </svg></p>
     </div>
     <div id="goal">
-        <div id="innergoal">GOOOAL!!!</div>
+        <div style="display: table; width: 100%; height: 100%; box-sizing: border-box; padding: 60px">
+            <div id="innergoal">GOOOAL!!!</div>
+        </div>
+    </div>
+
+    <div id="totaliser">
+        <div class="loader"></div>
+        <p><span id="totalRaised"></span></p>
     </div>
 
 
+    <audio loop autoplay>
+        <source src="assets/FootballChants.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio src="assets/AIRHORN.mp3" type="audio/mp3" preload="auto">
+    </audio>
+
+    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="physicsjs-full.js"></script>
     <script src="js.js"></script>
 
-    <audio src="AIRHORN.mp3" type="audio/mp3" preload="auto"></audio>
-    <script>
-    a = document.getElementsByTagName("audio")[0];
-    </script>
   </body>
 </html>

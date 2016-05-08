@@ -167,7 +167,6 @@
     #innergoal {
         display: table-cell; vertical-align: middle; 
         font-size: 200px;
-        position: absolute;
         left: 60px;
         top: 60px;
         right: 60px;
@@ -182,5 +181,12 @@
         -webkit-animation: AnimationName 8s ease infinite;
         -moz-animation: AnimationName 8s ease infinite;
         animation: AnimationName 8s ease infinite;
+    }
 
+    #totaliser {
+        background: #fff;
+        position: absolute;
+        top: 0
+        left: 0;
+        z-index: 100;
     }
