@@ -483,7 +483,7 @@
 
 
                 // animate centre line
-                $('#animatedline').css('top', 100-(totalTotal/15)+'%')
+                //$('#animatedline').css('top', 100-(totalTotal/15)+'%')
             }
         });
 

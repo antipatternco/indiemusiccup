@@ -67,7 +67,8 @@
     }
 
     #sofar {
-        bottom: 25px; left: 50%;
+        bottom: 25px;
+        left: 50%;
         margin-left: -100px;
     }
 
@@ -305,8 +306,22 @@
     }
 
     #charitylogo,
-    #sofar {
+    #animatedline {
         display: none;
+    }
+
+    #sofar {
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -ms-transform-origin: 0 0; /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        -webkit-transform-origin: 0 0; /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+        top: 260px;
+        right: 25px;
+        margin-left: auto;
+        left: auto;
+        bottom: auto;
     }
 
     #info {
@@ -328,6 +343,16 @@
     }
 
     #outergoal {
-        padding: 30px
+        padding: 0;
+    }
+
+    #line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        right: 0;
+        height: 4px;
+        margin-top: -2px;
+        width: auto;
     }
 }
