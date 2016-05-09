@@ -133,10 +133,23 @@
         font-size: 48px;
         text-align: center;
         display: none;
+        padding: 0 8%;
     }
 
-    #info {
-        padding: 10%;
+    #outerinfo, #innerinfo {
+        height: 100%;
+        width: 100%;
+        display: table;
+    }
+
+    #innerinfo {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #info a {
+        display: block;
+        margin-top: 0.5em;
     }
 
     #close {
@@ -297,7 +310,7 @@
     }
 
     #info {
-        padding-top: 90px;
+        padding: 90px 2% 0;
         font-size: 30px;
     }
 
