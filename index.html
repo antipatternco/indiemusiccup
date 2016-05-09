@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Indie Music Cup</title>
-    <meta property="og:url" content="http://indielabelcup.co.uk"/>
-    <meta property="og:title" content="Indie Label Cup"/>
-    <meta property="og:image" content="http://indielabelcup.co.uk/social.png"/>
-    <meta property="og:image:width" content="1400" />
-    <meta property="og:image:height" content="900" />
-    <meta property="og:site_name" content="Indie Label Cup"/>
-    <meta property="og:description" content="8 independent record labels come together in the Indie Label Cup. Support the teams in the 5-a-side football tournament by donating your spare change to their chosen charity."/>
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- <meta name="twitter:site" content="@solidsteelradio" />
-    <meta name="twitter:title" content="Solid Steel Radio" /> -->
-    <meta name="twitter:description" content="8 independent record labels come together in the Indie Label Cup. Support the teams in the 5-a-side football tournament by donating your spare change to their chosen charity." />
-    <meta name="twitter:image" content="http://indielabelcup.co.uk/social2.png" />
-    <meta name="twitter:url" content="http://indielabelcup.co.uk" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="physicsjs-full.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+  
   <body>
-    imcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimcimc
+    <div id="about">
+        About the tournament
+    </div>
+    <div id="donate">
+        <a href="http://api.jo.je/virginmoneygiving/">Donate now</a>
+    </div>
+    <div id="sofar">
+        £<span></span> raised so far for MSF
+    </div>
+    <div id="pitch">
+    </div>
+    <div id="logo">
+        <img src="assets/IMC-LOGO.png" width=138 height=186 />
+    </div>
+    <div id="charitylogo">
+        <a href="http://www.msf.org.uk/"><img src="assets/MSF.jpg" width=150 height=53 /></a>
+    </div>
+    <div id="by">
+        site by <a href="http://antipattern.co">antipattern</a>
+    </div>
+    <div id="line">
+    </div>
+    <div id="centerspot">
+    </div>
+    <div id="info">
+        <p>16 companies working in the independent music industry come together in a 5-a-side football tournament on 4 June 2016. Support the teams by donating to MSF, the independent humanitarian medical aid organisation performing vital work.</p>
+        <p><a href="http://api.jo.je/virginmoneygiving/">Donate now</a></p>
+        <p id="close"><svg x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+            <polygon points="68.991,12.423 68.638,12.069 67.931,11.362 67.577,11.009 40,38.586 12.423,11.009 11.009,12.423 38.586,40 11.009,67.577 11.362,67.931 12.069,68.638 12.423,68.991 40,41.414 67.577,68.991 68.991,67.577 41.414,40 "/>
+        </svg></p>
+    </div>
+    <div id="goal">
+        <div style="display: table; width: 100%; height: 100%; box-sizing: border-box; padding: 60px">
+            <div id="innergoal">GOOOAL!!!</div>
+        </div>
+    </div>
+
+    <div id="totaliser">
+        <div class="loader"></div>
+        <p><span id="totalRaised"></span></p>
+    </div>
+
+
+    <audio loop autoplay>
+        <source src="assets/FootballChants.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio src="assets/AIRHORN.mp3" type="audio/mp3" preload="auto">
+    </audio>
+
+    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="physicsjs-full.js"></script>
+    <script src="js.js"></script>
+
   </body>
 </html>

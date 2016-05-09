@@ -15,6 +15,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
+// Deploy to gh-pages
 gulp.task('deploy', function() {
   return gulp.src('./**/*')
     .pipe(ghPages());
