@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Indie Label Cup</title>
+    <meta property="og:url" content="http://indielabelcup.co.uk"/>
+    <meta property="og:title" content="Indie Label Cup"/>
+    <meta property="og:image" content="http://indielabelcup.co.uk/social.png"/>
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:site_name" content="Indie Label Cup"/>
+    <meta property="og:description" content="8 independent record labels come together in the Indie Label Cup. Support the teams in the 5-a-side football tournament by donating your spare change to their chosen charity."/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:site" content="@solidsteelradio" />
+    <meta name="twitter:title" content="Solid Steel Radio" /> -->
+    <meta name="twitter:description" content="8 independent record labels come together in the Indie Label Cup. Support the teams in the 5-a-side football tournament by donating your spare change to their chosen charity." />
+    <meta name="twitter:image" content="http://indielabelcup.co.uk/social2.png" />
+    <meta name="twitter:url" content="http://indielabelcup.co.uk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="styles.css" />
   </head>
   
@@ -12,12 +29,18 @@
         <a href="http://api.jo.je/virginmoneygiving/">Donate now</a>
     </div>
     <div id="sofar">
-        £<span></span> raised so far for MSF
+        £<span>
+            <span class="spinner">
+        <span class="bounce1"></span>
+        <span class="bounce2"></span>
+        <span class="bounce3"></span>
+    </span>
+        </span> raised so far for MSF
     </div>
     <div id="pitch">
     </div>
     <div id="logo">
-        <img src="assets/IMC-LOGO.png" width=138 height=186 />
+        <img src="assets/IMC-LOGO.png"  />
     </div>
     <div id="charitylogo">
         <a href="http://www.msf.org.uk/"><img src="assets/MSF.jpg" width=150 height=53 /></a>
@@ -26,6 +49,8 @@
         site by <a href="http://antipattern.co">antipattern</a>
     </div>
     <div id="line">
+    </div>
+    <div id="animatedline">
     </div>
     <div id="centerspot">
     </div>
@@ -37,7 +62,7 @@
         </svg></p>
     </div>
     <div id="goal">
-        <div style="display: table; width: 100%; height: 100%; box-sizing: border-box; padding: 60px">
+        <div id="outergoal">
             <div id="innergoal">GOOOAL!!!</div>
         </div>
     </div>

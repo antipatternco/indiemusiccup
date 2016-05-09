@@ -23,17 +23,20 @@
         event.preventDefault();
     }
 
+    var stageH = window.innerWidth > 600 ? window.innerWidth - 120 : window.innerWidth - 60;
+    var stageV = window.innerWidth > 600 ? window.innerHeight - 120 : window.innerHeight - 60;
+
     Physics(function (world) {
         // bounds of the window
-        var viewportBounds = Physics.aabb(0, 0, window.innerWidth-120, window.innerHeight-120),
+        var viewportBounds = Physics.aabb(0, 0, stageH, stageV),
             edgeBounce,
-            renderer
+            renderer,
+            width = window.innerWidth,
+            height = window.innerHeight;
 
         // create a renderer
         renderer = Physics.renderer('canvas', {
-            el: 'pitch',
-            width: 2320,
-            height: 678
+            el: 'pitch'
         });
 
         // add the renderer
@@ -171,7 +174,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/NINJA.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/NINJA.svg'
             }
         });
 
@@ -179,13 +182,13 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/HEAVENLY.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/HEAVENLY.svg'
             }
         });
 
         var player5 = Physics.body('player', {
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
-            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7
+            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
                 src: 'assets/BELLA-UNION.svg', // could be 80x80... if you want pixel ratio 2
             }
@@ -193,7 +196,7 @@
 
         var player6 = Physics.body('player', {
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
-            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7
+            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
                 src: 'assets/4AD.svg', // could be 80x80... if you want pixel ratio 2
             }
@@ -201,7 +204,7 @@
 
         var player7 = Physics.body('player', {
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
-            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7
+            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
                 src: 'assets/R&S.svg', // could be 80x80... if you want pixel ratio 2
             }
@@ -209,31 +212,31 @@
 
         var player8 = Physics.body('player', {
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
-            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7
+            ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
                 src: 'assets/BONAFIDE.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
         var player9 = Physics.body('player', {
-            x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.2
-            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7
+            x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
+            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
                 src: 'assets/BRFC.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
         var player10 = Physics.body('player', {
-            x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.2
-            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7
+            x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
+            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
                 src: 'assets/LAST-FM.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
         var player11 = Physics.body('player', {
-            x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.2
-            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7
+            x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
+            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
                 src: 'assets/RA.svg', // could be 80x80... if you want pixel ratio 2
             }
@@ -241,14 +244,14 @@
 
         var player12 = Physics.body('player', {
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
-            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7
+            ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
                 src: 'assets/SECRETLY.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
         var player13 = Physics.body('player', {
-            x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.2
+            x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
                 src: 'assets/MIXMAG.svg', // could be 80x80... if you want pixel ratio 2
@@ -256,7 +259,7 @@
         });
 
         var player14 = Physics.body('player', {
-            x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.2
+            x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
                 src: 'assets/MUTE.svg', // could be 80x80... if you want pixel ratio 2
@@ -264,7 +267,7 @@
         });
 
         var player15 = Physics.body('player', {
-            x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
+            x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
                 src: 'assets/PRS.svg', // could be 80x80... if you want pixel ratio 2
@@ -278,69 +281,10 @@
                 src: 'assets/VF.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
-
-
-        var hand = Physics.body('circle', {
-            x: renderer.width > 600 ? renderer.width * 0.65 : renderer.width * 0.7
-            ,y: renderer.width > 600 ? renderer.height * 0.8 : renderer.height * 0.15
-            ,radius: iconWidth
-            ,angle: renderer.width > 600 ? 0 : -2.5
-            ,mass: 1
-            ,vx: renderer.width > 600 ? 0 : -0.05
-            ,vy: renderer.width > 600 ? -0.15 : 0.1
-            ,restitution: 5
-        });
-
-        if (renderer.width > 600) {
-
-            //ball.view = new Image();
-            //ball.view.src = 'assets/ball.png';
-            // hand.view = new Image();
-            // hand.view.src = 'assets/hand.png';
-            // player1.view = new Image();
-            // player1.view.src = 'assets/fabric@2.png';
-            // player2.view = new Image();
-            // player2.view.src = 'assets/R&S.svg';
-            // player3.view = new Image();
-            // player3.view.src = 'assets/DOMINO.svg';
-            // player4.view = new Image();
-            // player4.view.src = 'assets/NINJA.svg';
-            // player5.view = new Image();
-            // player5.view.src = 'assets/HEAVENLY.svg';
-            // player6.view = new Image();
-            // player6.view.src = 'assets/BELLA-UNION.svg';
-            // player7.view = new Image();
-            // player7.view.src = 'assets/HEAVENLY.svg';
-            // player8.view = new Image();
-            // player8.view.src = 'assets/4AD.svg';
-        } else {
-            // ball.view = new Image();
-            // ball.view.src = 'balls.png';
-            // hand.view = new Image();
-            // hand.view.src = 'hands.png';
-            // player1.view = new Image();
-            // player1.view.src = 'balls/fabrics.png';
-            // player2.view = new Image();
-            // player2.view.src = 'balls/r&ss.png';
-            // player3.view = new Image();
-            // player3.view.src = 'balls/dominos.png';
-            // player4.view = new Image();
-            // player4.view.src = 'balls/ninjas.png';
-            // player5.view = new Image();
-            // player5.view.src = 'balls/heavenlys.png';
-            // player6.view = new Image();
-            // player6.view.src = 'balls/bella-unions.png';
-            // player7.view = new Image();
-            // player7.view.src = 'balls/hospitals.png';
-            // player8.view = new Image();
-            // player8.view.src = 'balls/4ADs.png';
-        }
         
         var players = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16];
         world.add(players);
         world.add([ball, goal1, goal2, edgeBounce]);
-
-        var showhand = window.setTimeout( function(){ world.add(hand); window.setTimeout(function(){ world.remove(hand) }, 3000)}, 5000 );
 
         var tch = Physics.behavior('interactive', { el: renderer.container }).applyTo( players );
         world.add(tch);
@@ -364,9 +308,9 @@
             ]
         });
 
-        world.on('interact:grab', function( data, e ){
-            window.clearTimeout(showhand);
-        });
+        // world.on('interact:grab', function( data, e ){
+        //     window.clearTimeout(showhand);
+        // });
 
         // monitor collisions
         world.on('collisions:detected', function( data, e ){
@@ -391,36 +335,36 @@
                 players[3].state.pos.y = renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3;
                 players[3].state.vel.set(0, 0);
                 players[4].state.pos.x = renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
-                players[4].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7;
+                players[4].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4;
                 players[4].state.vel.set(0, 0);
                 players[5].state.pos.x = renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
-                players[5].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7;
+                players[5].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4;
                 players[5].state.vel.set(0, 0);
                 players[6].state.pos.x = renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
-                players[6].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7;
+                players[6].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4;
                 players[6].state.vel.set(0, 0);
                 players[7].state.pos.x = renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
-                players[7].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.7;
+                players[7].state.pos.y = renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4;
                 players[7].state.vel.set(0, 0);
-                players[8].state.pos.x = renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.2
-                players[8].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7;
+                players[8].state.pos.x = renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
+                players[8].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6;
                 players[8].state.vel.set(0, 0);
-                players[9].state.pos.x = renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.2
-                players[9].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7;
+                players[9].state.pos.x = renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
+                players[9].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6;
                 players[9].state.vel.set(0, 0);
-                players[10].state.pos.x = renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.2
-                players[10].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7;
+                players[10].state.pos.x = renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
+                players[10].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6;
                 players[10].state.vel.set(0, 0);
                 players[11].state.pos.x = renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
-                players[11].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.7;
+                players[11].state.pos.y = renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6;
                 players[11].state.vel.set(0, 0);
-                players[12].state.pos.x = renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.2
+                players[12].state.pos.x = renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.8
                 players[12].state.pos.y = renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7;
                 players[12].state.vel.set(0, 0);
-                players[13].state.pos.x = renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.2
+                players[13].state.pos.x = renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.6
                 players[13].state.pos.y = renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7;
                 players[13].state.vel.set(0, 0);
-                players[14].state.pos.x = renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
+                players[14].state.pos.x = renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
                 players[14].state.pos.y = renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7;
                 players[14].state.vel.set(0, 0);
                 players[15].state.pos.x = renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
@@ -537,12 +481,9 @@
                 $('.loader').remove();
                 $('#sofar span').text(totalTotal);
 
-                /*
 
-
-                TODO: animate centre line here
-
-                */
+                // animate centre line
+                $('#animatedline').css('top', 100-(totalTotal/15)+'%')
             }
         });
 

@@ -37,7 +37,12 @@
     }
 
     #logo {
-        top: 37px; left: 37px;
+        top: 37px;
+        left: 37px;
+    }
+
+    #logo img {
+        width: 138px;
     }
 
     #pitch {
@@ -86,6 +91,7 @@
         color: #333;
     }
 
+    #animatedline,
     #line {
         position: absolute;
         left: 50%;
@@ -95,6 +101,13 @@
         margin-left: -2px;
         background: #fff;
         opacity: 0.5;
+    }
+
+    #animatedline {
+        top: 100%;
+        background: #fff;
+        opacity: 1;
+        transition: top 2s;
     }
 
     #centerspot {
@@ -183,6 +196,14 @@
         animation: AnimationName 8s ease infinite;
     }
 
+    #outergoal {
+        display: table;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 60px
+    }
+
     #totaliser {
         background: #fff;
         position: absolute;
@@ -190,3 +211,110 @@
         left: 0;
         z-index: 100;
     }
+
+    .spinner {
+    margin-left: 2px;
+}
+.spinner > span {
+    width: .3em;
+    height: .3em;
+    background-color: currentColor;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.5s infinite ease-in-out;
+    animation: bouncedelay 1.5s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: relative;
+    left: -2px;
+}
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+}
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+    body {
+        padding: 0;
+    }
+
+    #logo img {
+        width: 69px;
+    }
+
+    #pitch {
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    #by {
+        bottom: 165px;
+        right: -112px;
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -ms-transform-origin: 0 0; /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        -webkit-transform-origin: 0 0; /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+    }
+
+    #donate {
+        bottom: 7px;
+        left: 27px;
+    }
+
+    #about {
+        bottom: 7px;
+        left: auto;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    #charitylogo,
+    #sofar {
+        display: none;
+    }
+
+    #info {
+        padding-top: 90px;
+        font-size: 30px;
+    }
+
+    #innergoal {
+        font-size: 70px;
+        left: 30px;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        padding: 5%;
+
+        -webkit-animation: AnimationName 8s ease infinite;
+        -moz-animation: AnimationName 8s ease infinite;
+        animation: AnimationName 8s ease infinite;
+    }
+
+    #outergoal {
+        padding: 30px
+    }
+}
