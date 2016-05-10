@@ -11,7 +11,6 @@
 
     var donated = getQueryVariable('donated');
     if(donated && donated === 'true'){
-        //alert('thanks for donating');
         document.getElementById('thanks').style.display = "table";
         window.setTimeout(function(){
             $('#thanks').css('display', 'none');
