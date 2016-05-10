@@ -62,7 +62,7 @@
         }, true);
 
         var iconWidth = renderer.width > 600 ? renderer.width/30 : 20;
-        var ballWidth = renderer.width > 600 ? renderer.width/30 : 15;
+        var ballWidth = renderer.width > 600 ? renderer.width/20 : 30;
         // /****************** GOALS *******************/
 
         var goal1 = Physics.body('rectangle', {
@@ -166,7 +166,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/DOMINO.png'
             }
         });
 
@@ -174,7 +174,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/NINJA.svg'
+                src: 'assets/ninja.png'
             }
         });
 
@@ -182,7 +182,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/HEAVENLY.svg'
+                src: 'assets/HEAVENLY.png'
             }
         });
 
@@ -190,7 +190,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BELLA-UNION.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BELLA-UNION.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -198,7 +198,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/4AD.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/4AD.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -206,7 +206,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/R&S.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/R&S.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -214,7 +214,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BONAFIDE.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BONAFIDE.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -222,7 +222,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/BRFC.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BRFC.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -230,7 +230,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/LAST-FM.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/LAST-FM.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -238,7 +238,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/RA.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/RA.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -246,7 +246,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/SECRETLY.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/SECRETLY.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -254,7 +254,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MIXMAG.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MIXMAG.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -262,7 +262,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MUTE.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MUTE.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -270,7 +270,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/PRS.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/PRS.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -278,13 +278,29 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/VF.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/VF.png', // could be 80x80... if you want pixel ratio 2
             }
         });
         
+        var hand = Physics.body('circle', {
+            x: renderer.width > 600 ? renderer.width * 0.65 : renderer.width * 0.7
+            ,y: renderer.width > 600 ? renderer.height * 1 : 0
+            ,radius: iconWidth*2
+            ,angle: renderer.width > 600 ? -0.5 : -2.5
+            ,mass: 1
+            ,vx: renderer.width > 600 ? -0.15 : -0.02
+            ,vy: renderer.width > 600 ? -0.15 : 0.1
+            ,restitution: 5
+            ,styles: {
+                src: 'assets/hand.png'
+            }
+        });
+
         var players = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16];
         world.add(players);
         world.add([ball, goal1, goal2, edgeBounce]);
+
+        var showhand = window.setTimeout( function(){ world.add(hand); window.setTimeout(function(){ world.remove(hand) }, 3000)}, 5000 );
 
         var tch = Physics.behavior('interactive', { el: renderer.container }).applyTo( players );
         world.add(tch);
@@ -308,9 +324,9 @@
             ]
         });
 
-        // world.on('interact:grab', function( data, e ){
-        //     window.clearTimeout(showhand);
-        // });
+        world.on('interact:grab', function( data, e ){
+            window.clearTimeout(showhand);
+        });
 
         // monitor collisions
         world.on('collisions:detected', function( data, e ){
@@ -474,16 +490,16 @@
         }
 
         $.ajax({
-            url: "http://api.jo.je/virginmoneygiving/jsonp.php?d=574206&callback=?",
+            url: "https://api.justgiving.com/215e4365/v1/fundraising/pages/IndieMusicCup",
             dataType: 'json',
             success: function(data) {
-                var totalTotal = data.money_gift_aid + parseFloat(data.money_total);
+                //var totalTotal = data.money_gift_aid + parseFloat(data.money_total);
                 $('.loader').remove();
-                $('#sofar span').text(totalTotal);
+                $('#sofar span').text(data.totalRaisedOnline);
 
 
                 // animate centre line
-                $('#animatedline').css('top', 100-(totalTotal/15)+'%')
+                $('#animatedline').css('top', 100-data.totalRaisedPercentageOfFundraisingTarget+'%')
             }
         });
 
