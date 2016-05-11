@@ -157,7 +157,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/fabric.png'
+                src: 'assets/FABRIC.svg'
             }
         });
 
@@ -165,7 +165,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/DOMINO.png'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -173,7 +173,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/ninja.png'
+                src: 'assets/NINJA.svg'
             }
         });
 
@@ -181,7 +181,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/HEAVENLY.png'
+                src: 'assets/HEAVENLY.svg'
             }
         });
 
@@ -189,7 +189,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BELLA-UNION.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BELLA-UNION.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -197,7 +197,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/4AD.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/4AD.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -205,7 +205,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/R&S.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/R&S.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -213,7 +213,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BONAFIDE.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BONAFIDE.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -221,7 +221,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/BRFC.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BRFC.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -229,7 +229,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/LAST-FM.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/LAST-FM.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -237,7 +237,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/RA.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/RA.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -245,7 +245,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/SECRETLY.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/SECRETLY.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -253,7 +253,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MIXMAG.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MIXMAG.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -261,7 +261,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MUTE.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MUTE.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -269,7 +269,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/PRS.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/PRS.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -277,7 +277,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/VF.png', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/VF.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
         
