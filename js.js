@@ -126,7 +126,7 @@
             success: function(data) {
                 //var totalTotal = data.money_gift_aid + parseFloat(data.money_total);
                 $('.loader').remove();
-                $('#sofar span').text(data.totalRaisedOnline);
+                $('#sofar span').text( (data.totalRaisedOnline + data.totalEstimatedGiftAid).toFixed(2) );
 
 
                 // animate centre line
@@ -268,7 +268,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/TRANGRESSIVE.png'
             }
         });
 
@@ -284,7 +284,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/NINJA.svg'
             }
         });
 
@@ -292,7 +292,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/HEAVENLY.svg'
             }
         });
 
@@ -300,7 +300,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/BELLA-UNION.svg'
             }
         });
 
@@ -308,7 +308,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/4AD.svg'
             }
         });
 
@@ -316,7 +316,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/R&S.svg'
             }
         });
 
@@ -324,7 +324,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/BONAFIDE.svg'
             }
         });
 
@@ -332,7 +332,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/BRFC.svg'
             }
         });
 
@@ -340,7 +340,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/LAST-FM.svg'
             }
         });
 
@@ -348,7 +348,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/DOMINO.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/RA.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -356,7 +356,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/SECRETLY.svg'
             }
         });
 
@@ -364,7 +364,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/DOMINO.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MIXMAG.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -372,7 +372,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/DOMINO.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MUTE.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -380,7 +380,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/PRS.svg'
             }
         });
 
@@ -388,7 +388,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/VF.svg'
             }
         });
         
