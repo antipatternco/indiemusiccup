@@ -165,7 +165,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/DOMINO.png'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -173,7 +173,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/ninja.png'
+                src: 'assets/NINJA.svg'
             }
         });
 
@@ -181,7 +181,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/HEAVENLY.png'
+                src: 'assets/HEAVENLY.svg'
             }
         });
 
@@ -189,7 +189,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BELLA-UNION.PNG', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BELLA-UNION.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -295,7 +295,7 @@
             }
         });
 
-        var players = [player1, player2, player3, player4, player5];
+        var players = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16];
         world.add(players);
         world.add([ball, goal1, goal2, edgeBounce]);
 
