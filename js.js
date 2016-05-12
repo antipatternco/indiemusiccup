@@ -165,7 +165,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/ninja.svg'
+                src: 'assets/NINJA.svg'
             }
         });
 
