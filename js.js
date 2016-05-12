@@ -149,7 +149,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/TRANGRESSIVE.svg'
+                src: 'assets/TRANGRESSIVE.png'
             }
         });
 
