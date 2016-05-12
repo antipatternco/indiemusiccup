@@ -124,8 +124,7 @@
             url: "https://api.justgiving.com/215e4365/v1/fundraising/pages/IndieMusicCup",
             dataType: 'json',
             success: function(data) {
-                var total = data.totalRaisedOnline + data.totalEstimatedGiftAid;
-                //var totalTotal = data.money_gift_aid + parseFloat(data.money_total);
+                var total = parseFloat(data.totalRaisedOnline) + parseFloat(data.totalEstimatedGiftAid);
                 $('.loader').remove();
                 $('#sofar span').text( parseFloat(total).toFixed(2) );
 
