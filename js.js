@@ -165,7 +165,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/DOMINO.svg'
+                src: 'assets/DOMINO.png'
             }
         });
 
@@ -173,7 +173,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/NINJA.svg'
+                src: 'assets/ninja.png'
             }
         });
 
@@ -181,7 +181,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/HEAVENLY.svg'
+                src: 'assets/HEAVENLY.png'
             }
         });
 
@@ -189,7 +189,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BELLA-UNION.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BELLA-UNION.PNG', // could be 80x80... if you want pixel ratio 2
             }
         });
 
