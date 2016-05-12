@@ -157,7 +157,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/TRANGRESSIVE.png'
+                src: 'assets/FABRIC.svg'
             }
         });
 
@@ -173,7 +173,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/NINJA.svg'
+                src: 'assets/ninja.png'
             }
         });
 
@@ -181,7 +181,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/HEAVENLY.svg'
+                src: 'assets/HEAVENLY.png'
             }
         });
 
@@ -189,7 +189,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BELLA-UNION.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BELLA-UNION.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -197,7 +197,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/4AD.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/4AD.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -205,7 +205,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/R&S.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/R&S.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -213,7 +213,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BONAFIDE.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BONAFIDE.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -221,7 +221,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/BRFC.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/BRFC.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -229,7 +229,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/LAST-FM.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/LAST-FM.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -237,7 +237,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/RA.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/RA.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -245,7 +245,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/SECRETLY.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/SECRETLY.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -253,7 +253,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MIXMAG.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MIXMAG.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -261,7 +261,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MUTE.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/MUTE.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -269,7 +269,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/PRS.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/PRS.png', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -277,7 +277,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/VF.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/VF.png', // could be 80x80... if you want pixel ratio 2
             }
         });
         
@@ -295,7 +295,7 @@
             }
         });
 
-        var players = [player1, player2, player3, player4, player5];
+        var players = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16];
         world.add(players);
         world.add([ball, goal1, goal2, edgeBounce]);
 
