@@ -127,7 +127,7 @@
                 var total = data.totalRaisedOnline + data.totalEstimatedGiftAid;
                 //var totalTotal = data.money_gift_aid + parseFloat(data.money_total);
                 $('.loader').remove();
-                $('#sofar span').text( total.toFixed(2) );
+                $('#sofar span').text( parseFloat(total).toFixed(2) );
 
 
                 // animate centre line
