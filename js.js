@@ -157,7 +157,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/FABRIC.svg'
+                src: 'assets/TRANGRESSIVE.png'
             }
         });
 
@@ -295,7 +295,7 @@
             }
         });
 
-        var players = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16];
+        var players = [player1, player2, player3, player4, player5];
         world.add(players);
         world.add([ball, goal1, goal2, edgeBounce]);
 
