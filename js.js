@@ -445,7 +445,6 @@
         }
     })(jQuery);
 
-
     $(function() {
         $('#goal div div').rainbow({ 
                 colors: [
