@@ -268,7 +268,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
-                src: 'assets/TRANGRESSIVE.png'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -284,7 +284,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/NINJA.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -292,7 +292,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3
             ,styles: {
-                src: 'assets/HEAVENLY.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -300,7 +300,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BELLA-UNION.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -308,7 +308,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/4AD.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -316,7 +316,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/R&S.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -324,7 +324,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
-                src: 'assets/BONAFIDE.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -332,7 +332,7 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/BRFC.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -340,7 +340,7 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/LAST-FM.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -348,7 +348,7 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/RA.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/DOMINO.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -356,7 +356,7 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
-                src: 'assets/SECRETLY.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -364,7 +364,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MIXMAG.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/DOMINO.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -372,7 +372,7 @@
             x: renderer.width > 600 ? renderer.width * 0.144 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/MUTE.svg', // could be 80x80... if you want pixel ratio 2
+                src: 'assets/DOMINO.svg', // could be 80x80... if you want pixel ratio 2
             }
         });
 
@@ -380,7 +380,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/PRS.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
 
@@ -388,7 +388,7 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
-                src: 'assets/VF.svg'
+                src: 'assets/DOMINO.svg'
             }
         });
         
