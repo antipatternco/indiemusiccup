@@ -79,6 +79,7 @@ body {
     bottom: 25px;
     left: 50%;
     margin-left: -100px;
+    font-weight: 600;
 }
 
 #charitylogo {
@@ -208,7 +209,7 @@ a {
     text-align: center;
     background: linear-gradient(270deg, #ff2a00, #f9fa1e, #1ada37, #1a2ada, #bc1ada, #1a43da, #1ada37, #ebf612, #ff0000);
     background-size: 1800% 1800%;
-
+    font-weight: 600;
     -webkit-animation: AnimationName 8s ease infinite;
     -moz-animation: AnimationName 8s ease infinite;
     animation: AnimationName 8s ease infinite;
@@ -220,14 +221,6 @@ a {
     height: 100%;
     box-sizing: border-box;
     padding: 60px
-}
-
-#totaliser {
-    background: #fff;
-    position: absolute;
-    top: 0
-    left: 0;
-    z-index: 100;
 }
 
 .spinner {
@@ -291,6 +284,21 @@ a {
     font-size: 150px;
 }
 
+@media (max-width: 960px) {
+    #sofar {
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -ms-transform-origin: 0 0; /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        -webkit-transform-origin: 0 0; /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+        top: 260px;
+        right: 40px;
+        margin-left: auto;
+        left: auto;
+        bottom: auto;
+    }
+}
 
 @media (max-width: 600px) {
     
@@ -338,17 +346,7 @@ a {
     }
 
     #sofar {
-        -ms-transform: rotate(90deg); /* IE 9 */
-        -ms-transform-origin: 0 0; /* IE 9 */
-        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-        -webkit-transform-origin: 0 0; /* Chrome, Safari, Opera */
-        transform: rotate(90deg);
-        transform-origin: 100% 100%;
-        top: 260px;
         right: 25px;
-        margin-left: auto;
-        left: auto;
-        bottom: auto;
     }
 
     #info {
