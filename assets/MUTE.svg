@@ -3,6 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px"
 	 height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<<<<<<< HEAD
 <g id="Layer_1" display="none">
 	<g display="inline">
 		<path fill="#FFFFFF" d="M45.534,35.567c-1.026-1.281-2.487-2.201-4.158-2.533c-0.448-0.088-0.911-0.136-1.384-0.136
@@ -810,6 +811,8 @@
 			C62,20.621,61.666,20.174,60.978,19.819z"/>
 	</g>
 </g>
+=======
+>>>>>>> gh-pages
 <g id="Layer_1_copy_10">
 	<g>
 		<path fill="#FFFFFF" d="M40,0C17.908,0,0,17.908,0,40s17.908,40,40,40s40-17.908,40-40S62.092,0,40,0z M62,62H18V18h44V62z"/>

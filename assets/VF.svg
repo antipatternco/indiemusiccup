@@ -3,6 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px"
 	 height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<<<<<<< HEAD
 <g id="Layer_1" display="none">
 	<g display="inline">
 		<path fill="#FFFFFF" d="M45.534,35.567c-1.026-1.281-2.487-2.201-4.158-2.533c-0.448-0.088-0.911-0.136-1.384-0.136
@@ -99,6 +100,8 @@
 			c2.609,2.608,4.658,5.646,6.088,9.028c1.481,3.503,2.232,7.223,2.232,11.057C68.405,43.835,67.654,47.555,66.173,51.056z"/>
 	</g>
 </g>
+=======
+>>>>>>> gh-pages
 <g id="Layer_1_copy">
 	<g>
 		<path fill="#FFFFFF" d="M40,0C17.909,0,0,17.909,0,40c0,22.092,17.909,40,40,40c22.092,0,40-17.908,40-40C80,17.909,62.092,0,40,0
@@ -127,6 +130,7 @@
 			C25.717,34.897,26.389,36.449,26.622,37.044z"/>
 	</g>
 </g>
+<<<<<<< HEAD
 <g id="Layer_1_copy_2" display="none">
 	<g display="inline">
 		<path fill="#FFFFFF" d="M40.417,63.101c-1.575,0-2.7,1.227-2.7,2.758c0,1.519,1.125,2.746,2.7,2.746
@@ -772,4 +776,6 @@
 			c0.621-1.752,1.442-2.218,2.662-2.218c1.375,0,1.93,0.976,1.552,2.218l-0.199,0.71H51.92L52.163,39.449z"/>
 	</g>
 </g>
+=======
+>>>>>>> gh-pages
 </svg>

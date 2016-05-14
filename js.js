@@ -25,7 +25,130 @@
     var stageH = window.innerWidth > 600 ? window.innerWidth - 120 : window.innerWidth - 60;
     var stageV = window.innerWidth > 600 ? window.innerHeight - 120 : window.innerHeight - 60;
 
+<<<<<<< HEAD
     Physics(function (world) {
+=======
+    
+    
+    
+    var a = document.getElementsByTagName("audio")[1];
+
+    (function($) {
+        $.fn.rainbow = function(options) {
+            this.each(function() {
+                options.originalText = $(this).html();
+                options.iterations = 0;
+                if (!options.pauseLength) {
+                    options.pauseLength = options.animateInterval;
+                }
+                $(this).data('options',options);
+                if (options.pad) {
+                    for (x = 0; x < options.originalText.length; x++) {
+                        options.colors.unshift(options.colors[options.colors.length-1]);
+                    }
+                }
+                $.fn.rainbow.render(this);      
+            });
+        }
+        $.fn.rainbow.render = function(obj) {
+                var options = $(obj).data('options');
+                var chars = options.originalText.split('');
+                options.iterations++;
+                var newstr = '';
+                var counter = 0;
+                for (var x in chars) {
+                    if (chars[x]!=' ') {
+                        newstr = newstr + '<span style="color: ' + options.colors[counter] + ';">' + chars[x] + '</span>';
+                        counter++;
+                    } else {
+                        newstr = newstr + ' ';
+                    }
+                    if (counter >= options.colors.length) {
+                        counter = 0;
+                    }
+                }
+                $(obj).html(newstr);
+                var pause = (options.iterations % options.colors.length == 0);
+                if (options.animate) {(
+                        function(obj,interval) {
+                            var options = $(obj).data('options');
+                            var i = setTimeout(function() {
+                                $.fn.rainbow.shift(obj);
+                            },interval);
+                            options.interval = i;
+                            $(obj).data('options',options);
+                        }
+                    )(obj,pause?options.pauseLength:options.animateInterval);
+                }
+        }
+        $.fn.rainbow.shift = function(obj) {
+            var options = $(obj).data('options');
+            var color = options.colors.pop();
+            options.colors.unshift(color);
+            $.fn.rainbow.render(obj);
+        }
+    })(jQuery);
+
+    $(function() {
+        $('#goal div div').rainbow({ 
+                colors: [
+                    '#FF0000',
+                    '#f26522',
+                    '#fff200',
+                    '#00a651',
+                    '#28abe2',
+                    '#2e3192',
+                    '#6868ff'
+                ],
+                animate: true,
+                animateInterval: 100,
+                pad: false,
+                pauseLength: 100,
+            });
+        if (donated && donated === 'true') {
+            $('#thanks div').rainbow({ 
+                colors: [
+                    '#FF0000',
+                    '#f26522',
+                    '#fff200',
+                    '#00a651',
+                    '#28abe2',
+                    '#2e3192',
+                    '#6868ff'
+                ],
+                animate: true,
+                animateInterval: 100,
+                pad: false,
+                pauseLength: 100,
+            });
+        }
+
+        $.ajax({
+            url: "https://api.justgiving.com/215e4365/v1/fundraising/pages/IndieMusicCup",
+            dataType: 'json',
+            success: function(data) {
+                var total = parseFloat(data.totalRaisedOnline) + parseFloat(data.totalEstimatedGiftAid);
+                $('.loader').remove();
+                $('#sofar span').text( parseFloat(total).toFixed(2) );
+
+
+                // animate centre line
+                $('#animatedline').css('top', 100-data.totalRaisedPercentageOfFundraisingTarget+'%')
+            }
+        });
+
+        $('#about').on('click', function(){
+            $('#info').toggle();
+        })
+
+        $('#close').on('click', function(){
+            $('#info').toggle();
+        })
+    });
+
+    $(function(){
+        Physics(function (world) {
+>>>>>>> gh-pages
         // bounds of the window
         var viewportBounds = Physics.aabb(0, 0, stageH, stageV),
             edgeBounce,
@@ -145,6 +268,7 @@
 
         });
 
+<<<<<<< HEAD
 
 
 
@@ -153,11 +277,17 @@
 
 
 
+=======
+>>>>>>> gh-pages
         var player1 = Physics.body('player', {
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8,
             y: renderer.width > 600 ? renderer.height * 0.27 : renderer.height * 0.3,
             styles: {
+<<<<<<< HEAD
                 src: 'assets/FABRIC.svg'
+=======
+                src: 'assets/TRANGRESSIVE.png'
+>>>>>>> gh-pages
             }
         });
 
@@ -189,7 +319,11 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/BELLA-UNION.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/BELLA-UNION.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -197,7 +331,11 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/4AD.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/4AD.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -205,7 +343,11 @@
             x: renderer.width > 600 ? renderer.width * 0.58 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/R&S.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/R&S.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -213,7 +355,11 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.5 : renderer.height * 0.4
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/BONAFIDE.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/BONAFIDE.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -221,7 +367,11 @@
             x: renderer.width > 600 ? renderer.width * 0.284 : renderer.width * 0.8
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/BRFC.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/BRFC.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -229,7 +379,11 @@
             x: renderer.width > 600 ? renderer.width * 0.424 : renderer.width * 0.6
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/LAST-FM.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/LAST-FM.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -245,7 +399,11 @@
             x: renderer.width > 600 ? renderer.width * 0.72 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.734 : renderer.height * 0.6
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/SECRETLY.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/SECRETLY.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -269,7 +427,11 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.4
             ,y: renderer.width > 600 ? renderer.height * 0.377 : renderer.height * 0.7
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/PRS.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/PRS.svg'
+>>>>>>> gh-pages
             }
         });
 
@@ -277,7 +439,11 @@
             x: renderer.width > 600 ? renderer.width * 0.856 : renderer.width * 0.2
             ,y: renderer.width > 600 ? renderer.height * 0.623 : renderer.height * 0.7
             ,styles: {
+<<<<<<< HEAD
                 src: 'assets/VF.svg', // could be 80x80... if you want pixel ratio 2
+=======
+                src: 'assets/VF.svg'
+>>>>>>> gh-pages
             }
         });
         
@@ -393,6 +559,7 @@
             }
         });
     });
+<<<<<<< HEAD
     
     
     var a = document.getElementsByTagName("audio")[1];
@@ -510,3 +677,6 @@
             $('#info').toggle();
         })
     });
+=======
+    })
+>>>>>>> gh-pages
